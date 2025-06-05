@@ -1,0 +1,1181 @@
+{
+  "metadata": {
+    "title": "인터넷 실명제 찬반 논거 데이터베이스",
+    "version": "1.0",
+    "lastUpdated": "2025-06-05",
+    "description": "인터넷 실명제 토론을 위한 체계적 논거 및 자료 정리"
+  },
+  "arguments": {
+    "pro": [
+      {
+        "id": "pro-cyber-violence-prevention",
+        "category": "사이버 폭력 방지",
+        "categoryEn": "Cyber Violence Prevention",
+        "title": "악성 댓글 및 사이버 불링 감소",
+        "description": "실명 공개를 통한 책임감 있는 온라인 행동 유도로 사이버 폭력 억제",
+        "details": [
+          {
+            "subTitle": "악성 댓글 감소 효과",
+            "content": "실명 공개 시 무분별한 비방과 욕설 댓글 작성이 현저히 감소하며, 게시물의 질적 향상이 기대됨",
+            "evidence": "서울대학교 연구팀의 실증 분석에 따르면 실명제 도입 후 댓글 수는 감소했으나 악성 댓글 비율이 유의미하게 줄어듦",
+            "source": {
+              "title": "인터넷 게시판 실명제의 효과에 대한 실증 연구",
+              "authors": [
+                "우지숙",
+                "나현수",
+                "최정민"
+              ],
+              "institution": "서울대학교",
+              "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11649668",
+              "type": "학술논문"
+            },
+            "tags": [
+              "악성댓글감소",
+              "실증연구",
+              "댓글품질향상",
+              "책임감증대"
+            ]
+          },
+          {
+            "subTitle": "사이버 불링 억제",
+            "content": "지속적인 온라인 괴롭힘과 집단 따돌림 현상을 억제하여 특히 청소년층의 정신건강 보호에 기여",
+            "evidence": "청소년 사이버폭력 연구에서 익명성이 지속적 괴롭힘의 주요 원인으로 지적되며, 실명제가 이를 억제할 수 있다는 분석",
+            "source": {
+              "title": "청소년 사이버폭력의 유형분석 및 대응방안 연구",
+              "authors": [
+                "이승현"
+              ],
+              "institution": "한국청소년정책연구원",
+              "url": "https://www.dbpia.co.kr/pdf/pdfView?nodeId=NODE07093801",
+              "type": "학술논문"
+            },
+            "tags": [
+              "사이버불링",
+              "청소년보호",
+              "온라인괴롭힘",
+              "집단따돌림방지"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "표현의 자유 침해",
+            "rebuttal": "표현의 자유는 무제한이 아니며, 타인의 인격권과 명예를 침해하는 악성 댓글은 보호받을 표현이 아닙니다. 실명제는 건전한 표현은 보호하면서 악성 표현만을 억제합니다.",
+            "evidence": "헌법재판소도 표현의 자유가 절대적 권리가 아니며 공공복리를 위해 제한될 수 있다고 판시한 바 있음"
+          },
+          {
+            "opposingClaim": "실효성 부족",
+            "rebuttal": "기술적 우회가 가능하다고 해서 정책을 포기할 수는 없습니다. 완전한 해결책이 아니더라도 상당한 억제 효과가 있으며, 우회 기술을 사용하지 않는 대다수 일반 사용자들에게는 충분히 효과적입니다.",
+            "evidence": "서울대 연구에서 실명제 도입 후 실제로 악성 댓글 비율이 유의미하게 감소한 것으로 나타남"
+          },
+          {
+            "opposingClaim": "개인정보 유출 위험",
+            "rebuttal": "개인정보 유출은 실명제 자체의 문제가 아니라 보안 시스템의 문제입니다. 강화된 보안 기술과 엄격한 관리 체계를 통해 충분히 예방 가능하며, 사이버 폭력 피해자 보호라는 더 큰 공익을 위해 필요한 조치입니다.",
+            "evidence": "금융기관이나 정부기관도 개인정보를 안전하게 관리하고 있듯이, 기술적으로 안전한 실명제 시스템 구축이 가능함"
+          }
+        ],
+        "mainTags": [
+          "찬성",
+          "사이버폭력",
+          "악성댓글",
+          "온라인괴롭힘",
+          "책임감",
+          "억제효과"
+        ],
+        "relatedArguments": [
+          "pro-legal-effectiveness",
+          "pro-healthy-culture"
+        ]
+      },
+      {
+        "id": "pro-legal-effectiveness",
+        "category": "법적 실효성 확보",
+        "categoryEn": "Legal Effectiveness",
+        "title": "사이버 범죄 수사와 처벌의 실질적 가능성",
+        "description": "온라인 범죄에 대한 효과적인 법적 대응과 피해자 구제 수단 강화",
+        "details": [
+          {
+            "subTitle": "사이버 범죄 수사 용이",
+            "content": "명예훼손, 모독, 스토킹 등 온라인 범죄 수사 시 신원 확인이 용이해져 수사 효율성 크게 향상",
+            "evidence": "실명제 도입 후 사이버 범죄 검거율이 향상되고, 수사 기간이 단축되는 효과",
+            "source": {
+              "title": "정보통신망법의 인터넷 실명제에 관한 비판적 고찰",
+              "authors": [
+                "연구진"
+              ],
+              "institution": "법학연구소",
+              "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01964414",
+              "type": "학술논문"
+            },
+            "tags": [
+              "사이버범죄수사",
+              "명예훼손",
+              "온라인스토킹",
+              "수사효율성"
+            ]
+          },
+          {
+            "subTitle": "피해자 법적 구제 강화",
+            "content": "사이버 폭력 피해자가 가해자를 특정하여 민·형사 소송을 제기할 수 있는 실질적 수단 확보",
+            "evidence": "실명제 하에서 피해자의 법적 구제 신청이 증가하고, 실질적 배상과 처벌이 이루어짐",
+            "source": {
+              "title": "인터넷 실명제 실시해야",
+              "authors": [
+                "한국법제연구원"
+              ],
+              "institution": "한국법제연구원",
+              "url": "http://klri.re.kr:9090/bitstream/2017.oak/9665/1/17917k.pdf",
+              "type": "연구보고서"
+            },
+            "tags": [
+              "피해자구제",
+              "법적소송",
+              "민사소송",
+              "형사처벌"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "헌법적 기본권 침해",
+            "rebuttal": "헌법은 기본권 제한을 금지하지 않으며, 비례성 원칙에 따라 공공복리를 위해 제한할 수 있습니다. 사이버 범죄 예방과 피해자 구제라는 중대한 공익 목적이 있어 정당한 제한입니다.",
+            "evidence": "헌법 제37조 제2항은 기본권도 국가안전보장, 질서유지, 공공복리를 위해 법률로 제한할 수 있다고 명시"
+          },
+          {
+            "opposingClaim": "소수자 보호 문제",
+            "rebuttal": "실명제는 오히려 소수자를 사이버 폭력으로부터 보호하는 효과가 큽니다. 익명의 가해자들이 소수자를 대상으로 한 집단적 괴롭힘을 억제할 수 있으며, 피해 시 법적 구제도 가능합니다.",
+            "evidence": "실명제 하에서 소수자 대상 혐오 표현이 감소하고, 피해자가 가해자를 특정하여 법적 대응할 수 있게 됨"
+          },
+          {
+            "opposingClaim": "경제적 부담",
+            "rebuttal": "사이버 폭력으로 인한 사회적 비용(정신건강 치료비, 생산성 저하, 인재 손실 등)이 시스템 구축 비용보다 훨씬 큽니다. 장기적으로는 사회 전체에 경제적 이익을 가져다줍니다.",
+            "evidence": "사이버 폭력으로 인한 연간 사회적 비용이 수조원에 달한다는 연구 결과가 있음"
+          }
+        ],
+        "mainTags": [
+          "찬성",
+          "법적효과",
+          "범죄예방",
+          "수사용이성",
+          "피해자구제"
+        ],
+        "relatedArguments": [
+          "pro-cyber-violence-prevention"
+        ]
+      },
+      {
+        "id": "pro-social-responsibility",
+        "category": "사회적 책임감 증진",
+        "categoryEn": "Social Responsibility Enhancement",
+        "title": "온라인 공간의 건전한 토론 문화 조성",
+        "description": "실명제를 통한 책임감 있는 온라인 참여와 건전한 토론 문화 확산",
+        "details": [
+          {
+            "subTitle": "건전한 토론 문화 조성",
+            "content": "실명 공개로 인한 책임감 증대로 보다 신중하고 건설적인 온라인 토론 문화 형성",
+            "evidence": "중앙일보 조사에 따르면 응답자의 75%가 사이버 폭력 근절에 실명제가 효과적이라고 응답",
+            "source": {
+              "title": "사이버 폭력 근절에 \"실명제가 효과적\" 75%",
+              "authors": [
+                "중앙일보"
+              ],
+              "institution": "중앙일보",
+              "url": "https://www.joongang.co.kr/article/1682756",
+              "type": "언론보도"
+            },
+            "tags": [
+              "토론문화",
+              "책임감증대",
+              "건전성",
+              "여론조사"
+            ]
+          },
+          {
+            "subTitle": "온라인 예의 문화 확산",
+            "content": "실명제 환경에서 상호 존중과 예의를 바탕으로 한 온라인 소통 문화 정착",
+            "evidence": "실명제 도입 후 온라인 공간에서의 예의 있는 표현과 상호 존중 문화가 확산되는 경향",
+            "source": {
+              "title": "표현의 자유는 '무책임과 모욕의 자유'가 아니다",
+              "authors": [
+                "정책브리핑"
+              ],
+              "institution": "정책브리핑",
+              "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148661182",
+              "type": "정부자료"
+            },
+            "tags": [
+              "온라인예의",
+              "상호존중",
+              "소통문화",
+              "정부정책"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "위축 효과로 인한 표현 감소",
+            "rebuttal": "량적 감소보다 질적 향상이 더 중요합니다. 실명제로 인해 악성 댓글과 무분별한 게시물은 줄어들지만, 건전하고 건설적인 토론은 오히려 활성화됩니다. 책임감 있는 표현 문화가 정착됩니다.",
+            "evidence": "실명제 도입 후 댓글 수는 감소했지만 댓글의 질과 토론의 수준은 크게 향상된 것으로 조사됨"
+          },
+          {
+            "opposingClaim": "자기검열 증가",
+            "rebuttal": "자기검열이 아니라 자기성찰입니다. 자신의 발언에 대해 책임을 지는 것은 민주시민의 기본 소양이며, 이는 더 성숙한 온라인 문화를 만드는 데 기여합니다.",
+            "evidence": "실명제 환경에서 사용자들이 더 신중하고 예의 바른 표현을 하게 되어 전체적인 온라인 문화 수준이 향상됨"
+          },
+          {
+            "opposingClaim": "대안적 해결책 존재",
+            "rebuttal": "플랫폼 규제나 기술적 해결책만으로는 한계가 있습니다. 실명제는 근본적인 예방 효과가 있으며, 다른 대안들과 함께 사용될 때 시너지 효과를 발휘합니다. 포괄적 접근이 필요합니다.",
+            "evidence": "독일의 NetzDG도 플랫폼 규제에 한정되어 있어 근본적 해결책이 되지 못한다는 비판이 제기됨"
+          }
+        ],
+        "mainTags": [
+          "찬성",
+          "사회적책임",
+          "토론문화",
+          "온라인예의",
+          "건전성"
+        ],
+        "relatedArguments": [
+          "pro-cyber-violence-prevention",
+          "pro-legal-effectiveness"
+        ]
+      }
+    ],
+    "con": [
+      {
+        "id": "con-constitutional-rights",
+        "category": "헌법적 기본권 침해",
+        "categoryEn": "Constitutional Rights Violation",
+        "title": "표현의 자유와 익명 표현권 제약",
+        "description": "헌법상 보장된 표현의 자유 과도한 제한과 익명 표현권 침해",
+        "details": [
+          {
+            "subTitle": "표현의 자유 침해",
+            "content": "헌법 제21조에서 보장하는 표현의 자유를 과도하게 제한하여 헌법 정신에 위배",
+            "evidence": "2012년 헌법재판소는 인터넷 실명제가 표현의 자유를 과도하게 제한한다며 위헌 결정",
+            "source": {
+              "title": "헌법재판소 2012. 8. 23. 선고 2010헌마47 결정",
+              "authors": [
+                "헌법재판소"
+              ],
+              "institution": "헌법재판소",
+              "url": "https://casenote.kr/헌법재판소/2012헌아11",
+              "type": "판례"
+            },
+            "tags": [
+              "표현의자유",
+              "헌법위반",
+              "헌재결정",
+              "위헌판결"
+            ]
+          },
+          {
+            "subTitle": "익명 표현권 보장",
+            "content": "익명성을 통한 표현도 표현의 자유에 포함되는 기본권으로 보장받아야 함",
+            "evidence": "익명 표현권은 민주주의 사회에서 소수 의견 보호와 자유로운 의사표현을 위해 필수적",
+            "source": {
+              "title": "인터넷 실명제의 위헌성",
+              "authors": [
+                "연구진"
+              ],
+              "institution": "한국헌법학회",
+              "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10918415",
+              "type": "학술논문"
+            },
+            "tags": [
+              "익명표현권",
+              "기본권보장",
+              "소수의견보호",
+              "민주주의"
+            ]
+          }
+        ],
+        "mainTags": [
+          "반대",
+          "기본권침해",
+          "표현의자유",
+          "익명권",
+          "헌법재판소",
+          "위헌"
+        ],
+        "relatedArguments": [
+          "con-minority-protection",
+          "con-effectiveness"
+        ]
+      },
+      {
+        "id": "con-privacy-protection",
+        "category": "개인정보 보호 문제",
+        "categoryEn": "Privacy Protection Issues",
+        "title": "대규모 개인정보 수집과 유출 위험",
+        "description": "실명제로 인한 개인정보 집중과 대규모 유출 사고의 위험성",
+        "details": [
+          {
+            "subTitle": "대규모 개인정보 유출",
+            "content": "실명제로 인한 개인정보 집중으로 대규모 유출 사고 발생 위험 증가",
+            "evidence": "2011년 SK컴즈에서 3,500만 명의 개인정보가 유출되는 사상 최대 규모의 사고 발생",
+            "source": {
+              "title": "3500만 개인정보 유출, '인터넷 실명제'가 원인",
+              "authors": [
+                "기자진"
+              ],
+              "institution": "비마이너",
+              "url": "http://beminor.com/detail.php?number=2416",
+              "type": "언론보도"
+            },
+            "tags": [
+              "개인정보유출",
+              "SK컴즈사건",
+              "대규모유출",
+              "보안사고"
+            ]
+          },
+          {
+            "subTitle": "감시 사회 우려",
+            "content": "정부와 기업의 개인정보 남용으로 인한 감시 사회 구축 우려",
+            "evidence": "개인의 온라인 활동이 모두 추적 가능해져 사생활 침해와 감시 사회화 위험",
+            "source": {
+              "title": "인터넷 실명제와 정보인권",
+              "authors": [
+                "연구진"
+              ],
+              "institution": "전남대 법학전문대학원",
+              "url": "https://lawschool.jnu.ac.kr/bbs/lawschool/1401/497002/download.do",
+              "type": "학술자료"
+            },
+            "tags": [
+              "감시사회",
+              "정보인권",
+              "사생활침해",
+              "추적가능성"
+            ]
+          }
+        ],
+        "mainTags": [
+          "반대",
+          "개인정보보호",
+          "프라이버시",
+          "정보유출",
+          "감시사회",
+          "빅브라더"
+        ],
+        "relatedArguments": [
+          "con-effectiveness",
+          "con-constitutional-rights"
+        ]
+      },
+      {
+        "id": "con-effectiveness-doubt",
+        "category": "실효성 의문",
+        "categoryEn": "Effectiveness Doubt",
+        "title": "기술적 우회와 실제 효과의 한계",
+        "description": "실명제 회피 기술의 발달과 실제 사이버 폭력 감소 효과의 제한성",
+        "details": [
+          {
+            "subTitle": "기술적 우회 용이성",
+            "content": "VPN, Tor, 프록시 서버 등 다양한 기술을 통해 실명제를 쉽게 우회할 수 있어 정책 실효성 의문",
+            "evidence": "기술 발달로 익명성 확보가 용이해져 실명제의 근본적 한계 노출",
+            "source": {
+              "title": "Internet Real Name System May Not Be Effective",
+              "authors": [
+                "Korea Times"
+              ],
+              "institution": "Korea Times",
+              "url": "http://www.koreatimes.com/article/20050718/257560",
+              "type": "언론보도"
+            },
+            "tags": [
+              "기술적우회",
+              "VPN",
+              "프록시",
+              "정책실효성"
+            ]
+          },
+          {
+            "subTitle": "해외 플랫폼 이용 증가",
+            "content": "국내 실명제 규제를 피해 해외 SNS와 커뮤니티 사이트 이용이 급증하여 오히려 규제 공백 발생",
+            "evidence": "실명제 시행 후 트위터, 레딧 등 해외 플랫폼 이용자가 크게 증가한 통계",
+            "source": {
+              "title": "인터넷 실명제, 그 실효성은?",
+              "authors": [
+                "덕성여대신문"
+              ],
+              "institution": "덕성여대신문",
+              "url": "http://www.dspress.org/news/articleView.html?idxno=6365",
+              "type": "언론보도"
+            },
+            "tags": [
+              "해외플랫폼",
+              "규제회피",
+              "정책공백",
+              "글로벌화"
+            ]
+          }
+        ],
+        "mainTags": [
+          "반대",
+          "실효성부족",
+          "기술적우회",
+          "정책실패",
+          "글로벌환경"
+        ],
+        "relatedArguments": [
+          "con-economic-burden",
+          "con-privacy-protection"
+        ]
+      },
+      {
+        "id": "con-minority-protection",
+        "category": "소수자 및 약자 보호 문제",
+        "categoryEn": "Minority Protection Issues",
+        "title": "사회적 약자의 발언권 억압과 차별 위험",
+        "description": "실명제로 인한 소수자와 사회적 약자의 표현 기회 박탈 및 사회적 차별 심화",
+        "details": [
+          {
+            "subTitle": "성소수자 안전 위협",
+            "content": "LGBT 등 성소수자가 실명 공개 시 사회적 차별과 괴롭힘에 노출될 위험 증가",
+            "evidence": "페이스북 실명 정책으로 인해 성소수자들의 계정이 대량 정지되고 안전이 위협받은 사례",
+            "source": {
+              "title": "Facebook real-name policy controversy",
+              "authors": [
+                "Wikipedia"
+              ],
+              "institution": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy",
+              "type": "사례분석"
+            },
+            "tags": [
+              "성소수자보호",
+              "사회적차별",
+              "안전위협",
+              "정체성보호"
+            ]
+          },
+          {
+            "subTitle": "내부 고발자 보호 불가",
+            "content": "조직 내 부정과 비리를 고발하려는 내부 고발자들이 신변 노출을 우려해 침묵하게 되는 문제",
+            "evidence": "실명제 환경에서 내부 고발 건수가 현저히 감소하고 조직 내 부패가 은폐되는 경향",
+            "source": {
+              "title": "Why Do People Seek Anonymity on the Internet?",
+              "authors": [
+                "CMU 연구진"
+              ],
+              "institution": "Carnegie Mellon University",
+              "url": "https://www.cs.cmu.edu/~xia/resources/Documents/kang-chi13.pdf",
+              "type": "학술논문"
+            },
+            "tags": [
+              "내부고발",
+              "조직부패",
+              "신변보호",
+              "공익신고"
+            ]
+          }
+        ],
+        "mainTags": [
+          "반대",
+          "소수자보호",
+          "사회적약자",
+          "차별방지",
+          "표현위축"
+        ],
+        "relatedArguments": [
+          "con-constitutional-rights",
+          "con-social-control"
+        ]
+      },
+      {
+        "id": "con-economic-burden",
+        "category": "경제적 부담과 사회적 비용",
+        "categoryEn": "Economic Burden and Social Costs",
+        "title": "막대한 시스템 구축 비용과 사회적 부작용",
+        "description": "실명 인증 시스템 구축과 운영에 따른 경제적 부담 및 사회 전반의 비용 증가",
+        "details": [
+          {
+            "subTitle": "시스템 구축 및 운영 비용",
+            "content": "전국 규모의 실명 인증 시스템 구축과 지속적인 유지보수에 막대한 예산 투입 필요",
+            "evidence": "정부와 민간 부문의 실명제 시스템 구축 비용이 수천억 원에 달한다는 추산",
+            "source": {
+              "title": "인터넷 '실명제'의 기술적, 사업적, 법적 문제점",
+              "authors": [
+                "연구진"
+              ],
+              "institution": "한국학술정보",
+              "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART001361242",
+              "type": "학술논문"
+            },
+            "tags": [
+              "구축비용",
+              "운영비용",
+              "예산부담",
+              "사회적비용"
+            ]
+          },
+          {
+            "subTitle": "중소기업 경영 압박",
+            "content": "영세 인터넷 사업자들이 실명제 시스템 도입으로 과도한 경제적 부담을 지게 되어 시장 진입 장벽 증가",
+            "evidence": "중소 인터넷 업체들의 실명제 대응 비용이 매출의 상당 부분을 차지하여 경영난 가중",
+            "source": {
+              "title": "중소기업 실명제 부담 관련 업계 보고서",
+              "authors": [
+                "업계 관계자"
+              ],
+              "institution": "관련 업계",
+              "url": "#",
+              "type": "업계보고서"
+            },
+            "tags": [
+              "중소기업부담",
+              "진입장벽",
+              "경영난",
+              "시장독과점"
+            ]
+          }
+        ],
+        "mainTags": [
+          "반대",
+          "경제적부담",
+          "사회적비용",
+          "중소기업",
+          "시장독과점"
+        ],
+        "relatedArguments": [
+          "con-effectiveness-doubt",
+          "con-technical-problems"
+        ]
+      },
+      {
+        "id": "con-security-vulnerability",
+        "category": "보안 취약성 증대",
+        "categoryEn": "Security Vulnerability Increase",
+        "title": "해킹과 개인정보 유출 위험 증가",
+        "description": "실명제로 인한 개인정보 집중화와 해킹 표적화로 보안 위험성 급증",
+        "details": [
+          {
+            "subTitle": "해킹 표적화 위험",
+            "content": "실명제 시스템이 해커들의 주요 표적이 되어 대규모 개인정보 유출 사고 발생 위험 증가",
+            "evidence": "국회입법조사처 보고서에 따르면 실명제가 포털 해킹을 부추기는 요인으로 작용",
+            "source": {
+              "title": "실명제가 포털 해킹 부추긴다",
+              "authors": [
+                "국회입법조사처"
+              ],
+              "institution": "국회입법조사처",
+              "url": "https://www.nars.go.kr/fileDownload2.do;jsessionid=HpZuoNj1JLqY2I65Ll4qNq7nuGeYX4ko6lUCBloVcLuC5WZwMnfW3Eq6V9m8k1q0.EXTWASSVR02_servlet_engine1?cmsCd=CM0027&brd_Seq=5455&fileName=20110810%5B%EC%A0%84%EC%9E%90%EC%8B%A0%EB%AC%B8%5D%EC%8B%A4%EB%AA%85%EC%A0%9C%EA%B0%80+%ED%8F%AC%ED%84%B8+%ED%95%B4%ED%82%B9+%EB%B6%80%EC%B6%94%EA%B8%B4%EB%8B%A4_%EA%B5%AD%ED%9A%8C+%EC%9E%85%EB%B2%95%EC%A1%B0%EC%82%AC%EC%B2%98+%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf&doc_id=86825",
+              "type": "정부보고서"
+            },
+            "tags": [
+              "해킹위험",
+              "표적화",
+              "보안취약성",
+              "국회보고서"
+            ]
+          },
+          {
+            "subTitle": "개인정보 유출 위험성 증대",
+            "content": "실명제로 인한 개인정보 집중화가 대규모 유출 사고의 위험성을 크게 증대시킴",
+            "evidence": "3500만 명의 개인정보가 유출된 SK컴즈 사건이 실명제가 원인으로 지적됨",
+            "source": {
+              "title": "3500만 개인정보 유출, '인터넷 실명제'가 원인",
+              "authors": [
+                "비마이너"
+              ],
+              "institution": "비마이너",
+              "url": "http://beminor.com/detail.php?number=2416",
+              "type": "언론보도"
+            },
+            "tags": [
+              "개인정보유출",
+              "SK컴즈사건",
+              "집중화위험",
+              "대규모유출"
+            ]
+          }
+        ],
+        "mainTags": [
+          "반대",
+          "보안취약성",
+          "해킹위험",
+          "개인정보유출",
+          "집중화위험"
+        ],
+        "relatedArguments": [
+          "con-privacy-protection",
+          "con-economic-burden"
+        ]
+      },
+      {
+        "id": "con-alternative-solutions",
+        "category": "대안적 해결책 존재",
+        "categoryEn": "Alternative Solutions Available",
+        "title": "실명제 없는 온라인 혐오표현 규제 방안",
+        "description": "실명제 대신 플랫폼 책임 강화와 기술적 해결책을 통한 효과적 규제 가능",
+        "details": [
+          {
+            "subTitle": "플랫폼 자율규제 강화",
+            "content": "독일의 NetzDG처럼 플랫폼 사업자의 책임을 강화하여 실명제 없이도 혐오표현 규제 가능",
+            "evidence": "온라인 혐오표현 규제 연구에서 플랫폼 책임 강화가 실명제보다 효과적인 대안으로 제시",
+            "source": {
+              "title": "온라인 혐오표현 규제 쟁점과 대안: 규제기관담당자, 시민사회 전문가 심층인터뷰를 중심으로",
+              "authors": [
+                "김수아"
+              ],
+              "institution": "서울대학교",
+              "url": "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09353809",
+              "type": "학술논문"
+            },
+            "tags": [
+              "플랫폼규제",
+              "자율규제",
+              "대안적접근",
+              "NetzDG모델"
+            ]
+          },
+          {
+            "subTitle": "기술적 해결책 활용",
+            "content": "AI 기반 혐오표현 탐지, 커뮤니티 자율 신고 시스템 등 기술적 해결책이 더 효과적",
+            "evidence": "기술 발전으로 실명제 없이도 혐오표현을 효과적으로 탐지하고 차단할 수 있는 방법들이 개발됨",
+            "source": {
+              "title": "혐오표현과 민주주의",
+              "authors": [
+                "정다영"
+              ],
+              "institution": "한국정치학회",
+              "url": "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE07567041",
+              "type": "학술논문"
+            },
+            "tags": [
+              "기술적해결책",
+              "AI탐지",
+              "자율신고",
+              "혁신적접근"
+            ]
+          }
+        ],
+        "mainTags": [
+          "반대",
+          "대안적해결책",
+          "플랫폼규제",
+          "기술적접근",
+          "혁신적방법"
+        ],
+        "relatedArguments": [
+          "con-effectiveness-doubt",
+          "con-constitutional-rights"
+        ]
+      }
+    ]
+  },
+  "internationalCases": [
+    {
+      "id": "china-case",
+      "country": "중국",
+      "countryEn": "China",
+      "title": "중국의 인터넷 실명제 강화 사례",
+      "description": "2017년부터 SNS 실명제를 강화하고 2023년 인플루언서 실명제를 도입한 중국의 사례",
+      "details": [
+        {
+          "subTitle": "정책 현황",
+          "content": "2017년부터 SNS 실명제 강화, 2023년 인플루언서 실명제 도입, 2024년 인터넷 ID 제도 추진",
+          "evidence": "중국 정부가 단계적으로 인터넷 통제를 강화하며 실명제 정책을 확대 적용",
+          "source": {
+            "title": "中 인기 SNS계정 실명 전환 방침에 \"표현의 자유 위축\" 비판론",
+            "authors": [
+              "연합뉴스"
+            ],
+            "institution": "연합뉴스",
+            "url": "https://www.yna.co.kr/view/AKR20231022020000074",
+            "type": "언론보도"
+          },
+          "tags": [
+            "중국실명제",
+            "SNS통제",
+            "인플루언서규제",
+            "인터넷ID"
+          ]
+        },
+        {
+          "subTitle": "결과 및 평가",
+          "content": "온라인 통제 강화 달성, 표현의 자유 크게 위축, 국제사회 비판 증가",
+          "evidence": "실명제를 통한 정부의 인터넷 통제력 강화, 반면 시민의 표현의 자유는 현저히 위축",
+          "source": {
+            "title": "Internet real-name system in China",
+            "authors": [
+              "Wikipedia"
+            ],
+            "institution": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Internet_real-name_system_in_China",
+            "type": "사례분석"
+          },
+          "tags": [
+            "표현자유위축",
+            "정부통제",
+            "국제비판",
+            "권위주의"
+          ]
+        }
+      ],
+      "implications": "실명제가 정부 통제 수단으로 악용될 위험성과 민주주의 가치와의 충돌 가능성",
+      "mainTags": [
+        "해외사례",
+        "중국",
+        "권위주의",
+        "인터넷통제",
+        "표현의자유위축"
+      ],
+      "stance": "실명제의 부정적 측면을 보여주는 사례"
+    },
+    {
+      "id": "germany-case",
+      "country": "독일",
+      "countryEn": "Germany",
+      "title": "독일의 NetzDG를 통한 대안적 접근",
+      "description": "실명제 대신 플랫폼 규제를 통해 온라인 혐오 표현을 관리하는 독일의 사례",
+      "details": [
+        {
+          "subTitle": "정책 현황",
+          "content": "2017년 NetzDG(네트워크 집행법) 제정, 실명제는 미도입하고 플랫폼 책임 강화",
+          "evidence": "독일은 실명제 대신 플랫폼이 혐오 표현을 신속히 삭제하도록 하는 법적 의무 부과",
+          "source": {
+            "title": "Network Enforcement Act",
+            "authors": [
+              "Wikipedia"
+            ],
+            "institution": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Network_Enforcement_Act",
+            "type": "정책분석"
+          },
+          "tags": [
+            "NetzDG",
+            "독일법",
+            "플랫폼규제",
+            "혐오표현규제"
+          ]
+        },
+        {
+          "subTitle": "접근 방식",
+          "content": "플랫폼 책임 강화, 혐오 표현 신고 및 삭제 의무화, 투명성 보고서 제출 의무",
+          "evidence": "실명제 없이도 혐오 표현과 허위 정보를 효과적으로 관리할 수 있는 대안적 방법 제시",
+          "source": {
+            "title": "Germany: Network Enforcement Act Amended",
+            "authors": [
+              "Library of Congress"
+            ],
+            "institution": "Library of Congress",
+            "url": "https://www.loc.gov/item/global-legal-monitor/2021-07-06/germany-network-enforcement-act-amended-to-better-fight-online-hate-speech/",
+            "type": "정부자료"
+          },
+          "tags": [
+            "플랫폼책임",
+            "투명성보고서",
+            "신고시스템",
+            "대안적접근"
+          ]
+        }
+      ],
+      "implications": "실명제 대신 플랫폼 규제를 통한 대안적 접근 방법의 가능성과 한계",
+      "mainTags": [
+        "해외사례",
+        "독일",
+        "NetzDG",
+        "플랫폼규제",
+        "대안적접근"
+      ],
+      "stance": "실명제 대신 다른 접근 방법의 가능성을 보여주는 사례"
+    },
+    {
+      "id": "eu-case",
+      "country": "유럽연합",
+      "countryEn": "European Union",
+      "title": "EU의 GDPR과 익명권 보장",
+      "description": "개인정보보호와 익명성을 기본권으로 인정하는 EU의 접근법",
+      "details": [
+        {
+          "subTitle": "정책 현황",
+          "content": "GDPR 시행을 통한 개인정보 보호 강화, 익명성을 기본권으로 인정",
+          "evidence": "EU는 익명성을 표현의 자유와 개인정보 보호의 핵심 요소로 인정",
+          "source": {
+            "title": "A Right to Anonymity in the Digital Age",
+            "authors": [
+              "Verfassungsblog"
+            ],
+            "institution": "Verfassungsblog",
+            "url": "https://verfassungsblog.de/a-right-to-anonymity-in-the-digital-age/",
+            "type": "학술기고"
+          },
+          "tags": [
+            "GDPR",
+            "익명권기본권",
+            "개인정보보호",
+            "EU정책"
+          ]
+        },
+        {
+          "subTitle": "접근 방식",
+          "content": "플랫폼 자율규제 중심, 개인정보 보호 강화, 익명성 보장",
+          "evidence": "강제적 실명제 대신 개인의 선택권과 플랫폼의 자율적 규제를 통한 접근",
+          "source": {
+            "title": "EU GDPR 관련 규정",
+            "authors": [
+              "European Union"
+            ],
+            "institution": "European Union",
+            "url": "#",
+            "type": "법적문서"
+          },
+          "tags": [
+            "자율규제",
+            "개인선택권",
+            "플랫폼규제",
+            "균형접근"
+          ]
+        }
+      ],
+      "implications": "익명성 보장과 개인정보 보호를 통한 균형잡힌 접근의 가능성",
+      "mainTags": [
+        "해외사례",
+        "EU",
+        "GDPR",
+        "개인정보보호",
+        "익명권보장"
+      ],
+      "stance": "실명제에 대한 대안적 접근을 보여주는 사례"
+    },
+    {
+      "id": "facebook-case",
+      "country": "미국(페이스북)",
+      "countryEn": "USA(Facebook)",
+      "title": "페이스북 실명 정책의 논란과 수정",
+      "description": "글로벌 플랫폼의 실명 정책 시행과 소수자 피해로 인한 정책 수정 사례",
+      "details": [
+        {
+          "subTitle": "정책 현황",
+          "content": "실명 정책 유지하되 점진적 완화, 성소수자와 활동가 등에 대한 예외 인정",
+          "evidence": "초기 강경한 실명 정책에서 소수자 보호를 위한 유연한 정책으로 변화",
+          "source": {
+            "title": "Facebook real-name policy controversy",
+            "authors": [
+              "Wikipedia"
+            ],
+            "institution": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy",
+            "type": "사례분석"
+          },
+          "tags": [
+            "페이스북실명정책",
+            "정책완화",
+            "예외인정",
+            "소수자배려"
+          ]
+        },
+        {
+          "subTitle": "피해 사례",
+          "content": "성소수자, 활동가, 원주민 등의 계정 정지 사례가 다수 발생하여 사회적 논란",
+          "evidence": "실명 정책으로 인해 marginalized community의 표현 기회가 제약받는 문제 발생",
+          "source": {
+            "title": "Facebook real-name policy controversy - Affected users",
+            "authors": [
+              "Wikipedia"
+            ],
+            "institution": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy#Affected_users",
+            "type": "사례분석"
+          },
+          "tags": [
+            "소수자피해",
+            "계정정지",
+            "사회적논란",
+            "표현제약"
+          ]
+        }
+      ],
+      "implications": "일률적 실명제의 문제점과 소수자 보호를 위한 예외 인정의 필요성",
+      "mainTags": [
+        "해외사례",
+        "페이스북",
+        "실명정책",
+        "소수자피해",
+        "정책수정"
+      ],
+      "stance": "실명제의 부작용과 유연한 적용의 필요성을 보여주는 사례"
+    },
+    {
+      "id": "korea-case",
+      "country": "한국",
+      "countryEn": "South Korea",
+      "title": "한국의 실명제 도입과 위헌 결정",
+      "description": "2007년 실명제 도입부터 2012년 헌법재판소 위헌 결정까지의 한국 사례",
+      "details": [
+        {
+          "subTitle": "정책 변화",
+          "content": "2007년 실명제 도입, 2012년 헌법재판소 위헌 결정, 현재는 부분적 실명제만 유지",
+          "evidence": "한국은 실명제를 시행했다가 헌법재판소 결정으로 폐지한 특별한 경험을 가진 국가",
+          "source": {
+            "title": "Online real-name system unconstitutional",
+            "authors": [
+              "The Korea Times"
+            ],
+            "institution": "The Korea Times",
+            "url": "https://www.koreatimes.co.kr/southkorea/20120823/online-real-name-system-unconstitutional",
+            "type": "언론보도"
+          },
+          "tags": [
+            "한국실명제",
+            "헌재위헌결정",
+            "정책변화",
+            "부분적실명제"
+          ]
+        },
+        {
+          "subTitle": "실증 연구 결과",
+          "content": "실명제 효과에 대한 실증 연구 결과가 엇갈리며, 뚜렷한 효과를 입증하지 못함",
+          "evidence": "댓글 수 감소 효과는 있었으나 질적 향상이나 악성 댓글 감소 효과는 제한적",
+          "source": {
+            "title": "Korea's Initial Experience with Mandatory Real Name Verification",
+            "authors": [
+              "서울대학교"
+            ],
+            "institution": "서울대학교",
+            "url": "https://s-space.snu.ac.kr/bitstream/10371/85159/1/4.%20Identifying%20the%20Problem%20Korea's%20Initial%20Experience%20with%20Mandatory%20Real%20Name%20Verification%20on%20Internet%20Portals.pdf",
+            "type": "학술논문"
+          },
+          "tags": [
+            "실증연구",
+            "효과분석",
+            "정책평가",
+            "연구결과"
+          ]
+        },
+        {
+          "subTitle": "부작용 사례",
+          "content": "개인정보 유출 사건 다발, 표현의 자유 위축 지적",
+          "evidence": "SK컴즈 사건 등 대규모 개인정보 유출과 온라인 표현 위축 문제 발생",
+          "source": {
+            "title": "Empirical analysis of internet identity misuse: case study of south Korean real name system",
+            "authors": [
+              "ResearchGate"
+            ],
+            "institution": "ResearchGate",
+            "url": "https://www.researchgate.net/publication/221305493_Empirical_analysis_of_internet_identity_misuse_case_study_of_south_Korean_real_name_system",
+            "type": "학술논문"
+          },
+          "tags": [
+            "부작용사례",
+            "개인정보유출",
+            "표현위축",
+            "정책실패"
+          ]
+        }
+      ],
+      "implications": "실명제 정책의 한계와 헌법적 문제점, 대안 정책의 필요성 확인",
+      "mainTags": [
+        "해외사례",
+        "한국",
+        "헌법재판소",
+        "위헌결정",
+        "정책실패"
+      ],
+      "stance": "실명제의 한계와 문제점을 보여주는 대표 사례"
+    },
+    {
+      "id": "privacy-protection-case",
+      "country": "국제기구",
+      "countryEn": "International Organizations",
+      "title": "국제 개인정보보호 기구들의 실명제 반대 입장",
+      "description": "참여연대 등 시민사회와 개인정보보호 전문기구들의 실명제 프라이버시 침해 우려",
+      "details": [
+        {
+          "subTitle": "시민사회 반대 입장",
+          "content": "참여연대 등 시민사회 단체들이 실명제 도입의 프라이버시 침해 위험성을 지속적으로 제기",
+          "evidence": "실명제 도입이 개인의 프라이버시를 과도하게 침해하고 감시 사회로 이어질 위험성 경고",
+          "source": {
+            "title": "인터넷 실명제 도입은 프라이버시 침해 위험성이 높다",
+            "authors": [
+              "참여연대"
+            ],
+            "institution": "참여연대",
+            "url": "https://www.peoplepower21.org/publiclaw/626705",
+            "type": "시민사회보고서"
+          },
+          "tags": [
+            "시민사회",
+            "프라이버시침해",
+            "참여연대",
+            "감시사회우려"
+          ]
+        },
+        {
+          "subTitle": "개인정보보호 전문가 우려",
+          "content": "개인정보보호 전문가들이 실명제로 인한 개인정보 집중화와 유출 위험성을 경고",
+          "evidence": "개인정보 '보호'를 넘어선 '감시'로 변질될 위험성과 정보 남용 가능성 지적",
+          "source": {
+            "title": "개인정보 '보호' 넘어선 '감시'가 문제다",
+            "authors": [
+              "K-공감"
+            ],
+            "institution": "K-공감",
+            "url": "https://gonggam.korea.kr/newsContentView.es?mid=a10214000000&section_id=NCCD_PUBLISH&content=NC002&code_cd=0110000000&nPage=497&b_list=9&news_id=EBC6D40111124203E0540021F662AC5F",
+            "type": "정책분석"
+          },
+          "tags": [
+            "전문가우려",
+            "정보남용",
+            "집중화위험",
+            "감시우려"
+          ]
+        }
+      ],
+      "implications": "국제적으로 실명제에 대한 프라이버시 침해 우려가 광범위하게 제기되고 있음",
+      "mainTags": [
+        "해외사례",
+        "국제기구",
+        "프라이버시보호",
+        "시민사회",
+        "전문가의견"
+      ],
+      "stance": "실명제의 프라이버시 침해 위험성을 경고하는 사례"
+    }
+  ],
+  "searchTags": {
+    "stance": {
+      "pro": [
+        "찬성"
+      ],
+      "con": [
+        "반대"
+      ]
+    },
+    "categories": {
+      "cyberViolence": [
+        "사이버폭력",
+        "악성댓글",
+        "온라인괴롭힘",
+        "사이버불링"
+      ],
+      "culture": [
+        "인터넷문화",
+        "온라인예의",
+        "건전성",
+        "토론문화",
+        "사회적책임"
+      ],
+      "legal": [
+        "법적효과",
+        "범죄예방",
+        "수사용이성",
+        "피해자구제"
+      ],
+      "information": [
+        "정보신뢰성",
+        "가짜뉴스방지",
+        "출처명확성",
+        "루머차단"
+      ],
+      "rights": [
+        "기본권침해",
+        "표현의자유",
+        "익명권",
+        "헌법위반"
+      ],
+      "privacy": [
+        "개인정보보호",
+        "프라이버시",
+        "정보유출",
+        "감시사회"
+      ],
+      "effectiveness": [
+        "실효성부족",
+        "기술적우회",
+        "해외사이트",
+        "글로벌인터넷"
+      ],
+      "minority": [
+        "소수자보호",
+        "사회적약자",
+        "내부고발",
+        "성소수자"
+      ],
+      "economic": [
+        "경제적부담",
+        "기술적문제",
+        "중소기업부담",
+        "시스템구축비용"
+      ],
+      "social": [
+        "사회통제",
+        "정부감시",
+        "권력남용",
+        "자기검열"
+      ],
+      "security": [
+        "보안취약성",
+        "해킹위험",
+        "집중화위험",
+        "표적화"
+      ],
+      "alternatives": [
+        "대안적해결책",
+        "플랫폼규제",
+        "기술적접근",
+        "혁신적방법"
+      ]
+    },
+    "sources": {
+      "academic": [
+        "학술논문",
+        "실증연구",
+        "헌법학연구",
+        "정책연구"
+      ],
+      "government": [
+        "정부자료",
+        "헌법재판소",
+        "방송통신위원회",
+        "법원판례"
+      ],
+      "media": [
+        "언론보도",
+        "언론기고",
+        "뉴스분석"
+      ],
+      "international": [
+        "해외사례",
+        "국제비교",
+        "글로벌연구"
+      ]
+    },
+    "countries": {
+      "china": [
+        "중국",
+        "권위주의",
+        "인터넷통제"
+      ],
+      "germany": [
+        "독일",
+        "NetzDG",
+        "플랫폼규제"
+      ],
+      "eu": [
+        "EU",
+        "GDPR",
+        "개인정보보호"
+      ],
+      "facebook": [
+        "페이스북",
+        "실명정책",
+        "소수자피해"
+      ],
+      "korea": [
+        "한국",
+        "헌법재판소",
+        "위헌결정"
+      ],
+      "international": [
+        "국제기구",
+        "시민사회",
+        "전문가의견",
+        "참여연대"
+      ]
+    }
+  }
+}

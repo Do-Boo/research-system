@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비사토 토론 검색기</title>
+    <style>
+        :root {
+            /* 라이트 모드 색상 */
+            --bg-color: #fff;
+            --text-color: #202124;
+            --text-secondary: #70757a;
+            --text-tertiary: #4d5156;
+            --border-color: #dfe1e5;
+            --border-hover: #dadce0;
+            --shadow-color: rgba(64, 60, 67, .16);
+            --card-bg: #f8f9fa;
+            --card-border: #e8eaed;
+            --tag-bg: #f1f3f4;
+            --tag-text: #3c4043;
+            --accent-color: #333;
+            --hover-bg: #f8f9fa;
+            --pro-bg: #e8f5e8;
+            --pro-text: #137333;
+            --con-bg: #fce8e6;
+            --con-text: #d93025;
+            --international-bg: #fef7e0;
+            --international-text: #f9ab00;
+            --detail-border: #f0f0f0;
+        }
+
+        [data-theme="dark"] {
+            /* 다크 모드 색상 */
+            --bg-color: #121212;
+            --text-color: #e8eaed;
+            --text-secondary: #9aa0a6;
+            --text-tertiary: #bdc1c6;
+            --border-color: #3c4043;
+            --border-hover: #5f6368;
+            --shadow-color: rgba(0, 0, 0, .3);
+            --card-bg: #1f1f1f;
+            --card-border: #3c4043;
+            --tag-bg: #3c4043;
+            --tag-text: #e8eaed;
+            --accent-color: #8ab4f8;
+            --hover-bg: #2d2d2d;
+            --pro-bg: #1e3a1e;
+            --pro-text: #81c995;
+            --con-bg: #3d1a1a;
+            --con-text: #f28b82;
+            --international-bg: #3d3520;
+            --international-text: #fdd663;
+            --detail-border: #3c4043;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            color: var(--text-color);
+            background: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .header {
+            text-align: center;
+            padding: 100px 20px 40px;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            font-weight: normal;
+            color: var(--text-color);
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+            color: var(--text-color);
+            background: var(--bg-color);
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: var(--hover-bg);
+            box-shadow: 0 2px 5px 1px var(--shadow-color);
+        }
+
+        .search-container {
+            max-width: 584px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 584px;
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 10px 16px;
+            font-size: 16px;
+            outline: none;
+            transition: box-shadow 0.2s, border-color 0.3s;
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .search-box:hover {
+            box-shadow: 0 2px 5px 1px var(--shadow-color);
+        }
+
+        .search-box:focus {
+            box-shadow: 0 2px 5px 1px var(--shadow-color);
+            border-color: var(--accent-color);
+        }
+
+        .search-box::placeholder {
+            color: var(--text-secondary);
+        }
+
+        .filters-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .filter-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            width: 60px;
+            flex-shrink: 0;
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .filter-btn {
+            padding: 6px 12px;
+            border: 1px solid var(--border-hover);
+            background: var(--bg-color);
+            border-radius: 16px;
+            cursor: pointer;
+            font-size: 13px;
+            color: var(--tag-text);
+            transition: all 0.1s ease;
+        }
+
+        .filter-btn:hover {
+            box-shadow: 0 1px 1px var(--shadow-color);
+            background-color: var(--hover-bg);
+        }
+
+        .filter-btn.active {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        .results-info {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .results-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .result-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        .result-header {
+            margin-bottom: 8px;
+        }
+
+        .result-stance {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-right: 8px;
+        }
+
+        .stance-pro {
+            background: var(--pro-bg);
+            color: var(--pro-text);
+        }
+
+        .stance-con {
+            background: var(--con-bg);
+            color: var(--con-text);
+        }
+
+        .stance-international {
+            background: var(--international-bg);
+            color: var(--international-text);
+        }
+
+        .result-title {
+            color: var(--text-color);
+            font-size: 18px;
+            font-weight: normal;
+            text-decoration: none;
+            margin-bottom: 5px;
+            display: block;
+            line-height: 1.3;
+        }
+
+        .result-title:hover {
+            text-decoration: underline;
+        }
+
+        .result-category {
+            color: var(--accent-color);
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .result-description {
+            color: var(--text-tertiary);
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .result-details {
+            margin-top: 15px;
+        }
+
+        .detail-item {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid var(--detail-border);
+        }
+
+        .detail-title {
+            font-weight: 500;
+            color: var(--text-color);
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .detail-content {
+            color: var(--text-tertiary);
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+
+        .detail-evidence {
+            color: var(--text-secondary);
+            font-size: 12px;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .source-info {
+            background: var(--card-bg);
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid var(--card-border);
+            font-size: 12px;
+        }
+
+        .source-title {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .source-title:hover {
+            text-decoration: underline;
+        }
+
+        .source-meta {
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+
+        .tags {
+            margin-top: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 11px;
+            margin: 2px 4px 2px 0;
+        }
+
+        .tag.highlight {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+
+        .stats {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 60px 20px 30px;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .theme-toggle {
+                top: 15px;
+                right: 15px;
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            .filter-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .filter-label {
+                width: auto;
+                margin-bottom: 5px;
+            }
+
+            .result-title {
+                font-size: 16px;
+            }
+        }
+
+        /* 컴팩트 뷰 */
+        .compact-view .result-details {
+            display: none;
+        }
+
+        .view-toggle {
+            text-align: right;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+        }
+
+        .view-btn {
+            background: none;
+            border: none;
+            color: var(--accent-color);
+            cursor: pointer;
+            font-size: 13px;
+            margin-left: 15px;
+            text-decoration: underline;
+        }
+
+        .view-btn.active {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* 반박 논거 스타일 */
+        .counter-arguments-section {
+            margin-top: 20px;
+            padding: 15px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+        }
+
+        .counter-arguments-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .counter-argument {
+            margin-bottom: 15px;
+            padding: 12px;
+            background: var(--bg-color);
+            border-radius: 6px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .counter-argument:last-child {
+            margin-bottom: 0;
+        }
+
+        .opposing-claim {
+            margin-bottom: 8px;
+            padding: 8px;
+            background: var(--con-bg);
+            color: var(--con-text);
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .rebuttal-content {
+            margin-bottom: 8px;
+            padding: 8px;
+            background: var(--pro-bg);
+            color: var(--pro-text);
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .rebuttal-evidence {
+            padding: 6px;
+            background: var(--hover-bg);
+            color: var(--text-secondary);
+            border-radius: 4px;
+            font-size: 13px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <button class="theme-toggle" id="themeToggle">
+            <span class="theme-text">다크 모드</span>
+        </button>
+        <h1>비사토 토론 검색기</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-box" placeholder="논거, 키워드, 출처 검색...">
+        </div>
+    </div>
+
+    <div class="filters-container">
+        <div class="filter-row">
+            <div class="filter-label">입장</div>
+            <div class="filter-buttons" id="stanceFilters">
+                <button class="filter-btn active" data-filter="stance" data-value="all">전체</button>
+                <button class="filter-btn" data-filter="stance" data-value="pro">찬성</button>
+                <button class="filter-btn" data-filter="stance" data-value="con">반대</button>
+                <button class="filter-btn" data-filter="stance" data-value="international">해외사례</button>
+            </div>
+        </div>
+
+        <div class="filter-row">
+            <div class="filter-label">주제</div>
+            <div class="filter-buttons" id="categoryFilters">
+                <button class="filter-btn active" data-filter="category" data-value="all">전체</button>
+                <button class="filter-btn" data-filter="category" data-value="cyberViolence">사이버폭력</button>
+                <button class="filter-btn" data-filter="category" data-value="rights">기본권</button>
+                <button class="filter-btn" data-filter="category" data-value="privacy">개인정보</button>
+                <button class="filter-btn" data-filter="category" data-value="effectiveness">실효성</button>
+            </div>
+        </div>
+
+        <div class="filter-row">
+            <div class="filter-label">출처</div>
+            <div class="filter-buttons" id="sourceFilters">
+                <button class="filter-btn active" data-filter="source" data-value="all">전체</button>
+                <button class="filter-btn" data-filter="source" data-value="academic">학술논문</button>
+                <button class="filter-btn" data-filter="source" data-value="government">정부자료</button>
+                <button class="filter-btn" data-filter="source" data-value="media">언론</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats" id="statsContainer"></div>
+
+    <div class="view-toggle">
+        <button class="view-btn active" id="detailedView">상세보기</button>
+        <button class="view-btn" id="compactView">간단보기</button>
+    </div>
+
+    <div class="results-info" id="resultsInfo"></div>
+
+    <div class="results-container" id="resultsContainer">
+        <div class="loading">데이터를 불러오는 중...</div>
+    </div>
+
+    <script>
+        // 전역 변수
+        let debateData = null;
+        let filteredResults = [];
+        let currentFilters = {
+            stance: 'all',
+            category: 'all',
+            source: 'all'
+        };
+        let searchTerm = '';
+        let isDetailedView = true;
+
+        // 테마 관리
+        function initializeTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            setTheme(savedTheme);
+
+            document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+        }
+
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            const themeToggle = document.getElementById('themeToggle');
+            const themeText = themeToggle.querySelector('.theme-text');
+
+            if (theme === 'dark') {
+                themeText.textContent = '라이트 모드';
+            } else {
+                themeText.textContent = '다크 모드';
+            }
+
+            localStorage.setItem('theme', theme);
+        }
+
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        }
+
+        // JSON 데이터 로드
+        async function loadDebateData() {
+            try {
+                const response = await fetch('./debate-data.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('JSON 파일을 불러오는 중 오류가 발생했습니다:', error);
+                // 오류 발생 시 기본 데이터 사용
+                return getDefaultData();
+            }
+        }
+
+        // 기본 데이터 (JSON 파일 로드 실패 시 사용)
+        function getDefaultData() {
+            return {
+                "arguments": {
+                    "pro": [
+                        {
+                            "id": "pro-cyber-violence-prevention",
+                            "category": "사이버 폭력 방지",
+                            "title": "악성 댓글 및 사이버 불링 감소",
+                            "description": "실명 공개를 통한 책임감 있는 온라인 행동 유도로 사이버 폭력 억제",
+                            "details": [
+                                {
+                                    "subTitle": "악성 댓글 감소 효과",
+                                    "content": "실명 공개 시 무분별한 비방과 욕설 댓글 작성이 현저히 감소하며, 게시물의 질적 향상이 기대됨",
+                                    "evidence": "서울대학교 연구팀의 실증 분석에 따르면 실명제 도입 후 댓글 수는 감소했으나 악성 댓글 비율이 유의미하게 줄어듦",
+                                    "source": {
+                                        "title": "인터넷 게시판 실명제의 효과에 대한 실증 연구",
+                                        "authors": ["우지숙", "나현수", "최정민"],
+                                        "institution": "서울대학교",
+                                        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11649668",
+                                        "type": "학술논문"
+                                    },
+                                    "tags": ["악성댓글감소", "실증연구", "댓글품질향상", "책임감증대"]
+                                }
+                            ],
+                            "mainTags": ["찬성", "사이버폭력", "악성댓글", "온라인괴롭힘", "책임감", "억제효과"]
+                        }
+                    ],
+                    "con": [
+                        {
+                            "id": "con-constitutional-rights",
+                            "category": "헌법적 기본권 침해",
+                            "title": "표현의 자유와 익명 표현권 제약",
+                            "description": "헌법상 보장된 표현의 자유 과도한 제한과 익명 표현권 침해",
+                            "details": [
+                                {
+                                    "subTitle": "표현의 자유 침해",
+                                    "content": "헌법 제21조에서 보장하는 표현의 자유를 과도하게 제한하여 헌법 정신에 위배",
+                                    "evidence": "2012년 헌법재판소는 인터넷 실명제가 표현의 자유를 과도하게 제한한다며 위헌 결정",
+                                    "source": {
+                                        "title": "헌법재판소 2012. 8. 23. 선고 2010헌마47 결정",
+                                        "authors": ["헌법재판소"],
+                                        "institution": "헌법재판소",
+                                        "url": "https://casenote.kr/헌법재판소/2012헌아11",
+                                        "type": "판례"
+                                    },
+                                    "tags": ["표현의자유", "헌법위반", "헌재결정", "위헌판결"]
+                                }
+                            ],
+                            "mainTags": ["반대", "기본권침해", "표현의자유", "익명권", "헌법재판소", "위헌"]
+                        }
+                    ]
+                },
+                "internationalCases": []
+            };
+        }
+
+        // 초기화
+        document.addEventListener('DOMContentLoaded', async function () {
+            // 테마 초기화
+            initializeTheme();
+
+            // 로딩 상태 표시
+            document.getElementById('resultsContainer').innerHTML = '<div class="loading">데이터를 불러오는 중...</div>';
+            document.getElementById('resultsInfo').textContent = '데이터 로딩 중...';
+
+            try {
+                // JSON 데이터 로드
+                debateData = await loadDebateData();
+
+                // 데이터 유효성 검증
+                if (!debateData || !debateData.arguments) {
+                    throw new Error('잘못된 데이터 형식입니다.');
+                }
+
+                // 데이터 로드 완료 후 초기화
+                initializeFilters();
+                performSearch();
+
+                // 이벤트 리스너
+                document.getElementById('searchInput').addEventListener('input', handleSearch);
+                document.getElementById('detailedView').addEventListener('click', () => setViewMode(true));
+                document.getElementById('compactView').addEventListener('click', () => setViewMode(false));
+
+                console.log('DebateSeeker: 데이터가 성공적으로 로드되었습니다.');
+                console.log('로드된 데이터:', debateData);
+            } catch (error) {
+                console.error('DebateSeeker: 초기화 중 오류가 발생했습니다:', error);
+                document.getElementById('resultsContainer').innerHTML = `
+                    <div class="no-results">
+                        데이터를 불러오는 중 오류가 발생했습니다.<br>
+                        페이지를 새로고침하거나 관리자에게 문의하세요.
+                    </div>
+                `;
+            }
+        });
+
+        // 필터 초기화
+        function initializeFilters() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', handleFilterClick);
+            });
+        }
+
+        // 필터 클릭 처리
+        function handleFilterClick(event) {
+            const btn = event.target;
+            const filterType = btn.dataset.filter;
+            const filterValue = btn.dataset.value;
+
+            // 같은 그룹의 다른 버튼들 비활성화
+            const groupButtons = document.querySelectorAll(`[data-filter="${filterType}"]`);
+            groupButtons.forEach(b => b.classList.remove('active'));
+
+            // 클릭된 버튼 활성화
+            btn.classList.add('active');
+
+            // 필터 상태 업데이트
+            currentFilters[filterType] = filterValue;
+
+            // 검색 실행
+            performSearch();
+        }
+
+        // 검색 처리
+        function handleSearch(event) {
+            searchTerm = event.target.value.toLowerCase();
+            performSearch();
+        }
+
+        // 검색 실행
+        function performSearch() {
+            filteredResults = [];
+
+            // 데이터가 로드되지 않았으면 종료
+            if (!debateData || !debateData.arguments) {
+                console.warn('DebateSeeker: 데이터가 아직 로드되지 않았습니다.');
+                return;
+            }
+
+            // 찬성 논거 필터링
+            if (currentFilters.stance === 'all' || currentFilters.stance === 'pro') {
+                const proArguments = debateData.arguments.pro || [];
+                proArguments.forEach(arg => {
+                    if (matchesFilter(arg, 'pro')) {
+                        filteredResults.push({ ...arg, stance: 'pro' });
+                    }
+                });
+            }
+
+            // 반대 논거 필터링
+            if (currentFilters.stance === 'all' || currentFilters.stance === 'con') {
+                const conArguments = debateData.arguments.con || [];
+                conArguments.forEach(arg => {
+                    if (matchesFilter(arg, 'con')) {
+                        filteredResults.push({ ...arg, stance: 'con' });
+                    }
+                });
+            }
+
+            // 해외 사례 필터링
+            if (currentFilters.stance === 'all' || currentFilters.stance === 'international') {
+                const internationalCases = debateData.internationalCases || [];
+                internationalCases.forEach(caseItem => {
+                    if (matchesFilter(caseItem, 'international')) {
+                        filteredResults.push({ ...caseItem, stance: 'international' });
+                    }
+                });
+            }
+
+            updateStats();
+            renderResults();
+        }
+
+        // 필터 매칭 확인
+        function matchesFilter(item, stance) {
+            // 텍스트 검색
+            if (searchTerm && !matchesSearchTerm(item)) {
+                return false;
+            }
+
+            // 카테고리 필터
+            if (currentFilters.category !== 'all' && !matchesCategory(item)) {
+                return false;
+            }
+
+            // 출처 필터
+            if (currentFilters.source !== 'all' && !matchesSource(item)) {
+                return false;
+            }
+
+            return true;
+        }
+
+        // 검색어 매칭
+        function matchesSearchTerm(item) {
+            const searchableText = [
+                item.title || '',
+                item.description || '',
+                item.category || '',
+                item.country || '',
+                ...(item.mainTags || []),
+                ...(item.details || []).map(d => [d.content, d.evidence].join(' '))
+            ].join(' ').toLowerCase();
+
+            return searchableText.includes(searchTerm);
+        }
+
+        // 카테고리 매칭
+        function matchesCategory(item) {
+            const categoryMap = {
+                'cyberViolence': ['사이버폭력', '악성댓글', '온라인괴롭힘', '사이버불링'],
+                'rights': ['기본권침해', '표현의자유', '익명권', '헌법위반'],
+                'privacy': ['개인정보보호', '프라이버시', '정보유출', '감시사회'],
+                'effectiveness': ['실효성부족', '기술적우회', '해외사이트', '글로벌인터넷']
+            };
+
+            const keywords = categoryMap[currentFilters.category] || [];
+            const itemTags = item.mainTags || [];
+
+            return keywords.some(keyword =>
+                itemTags.some(tag => tag.includes(keyword)) ||
+                (item.category && item.category.includes(keyword))
+            );
+        }
+
+        // 출처 매칭
+        function matchesSource(item) {
+            const sourceMap = {
+                'academic': ['학술논문', '연구'],
+                'government': ['정부자료', '헌법재판소', '판례'],
+                'media': ['언론보도', '언론기고']
+            };
+
+            const keywords = sourceMap[currentFilters.source] || [];
+
+            if (item.details) {
+                return item.details.some(detail =>
+                    detail.source && keywords.some(keyword =>
+                        detail.source.type.includes(keyword)
+                    )
+                );
+            }
+
+            return false;
+        }
+
+        // 통계 업데이트
+        function updateStats() {
+            const proCount = filteredResults.filter(r => r.stance === 'pro').length;
+            const conCount = filteredResults.filter(r => r.stance === 'con').length;
+            const caseCount = filteredResults.filter(r => r.stance === 'international').length;
+
+            document.getElementById('statsContainer').textContent =
+                `찬성 ${proCount}개 · 반대 ${conCount}개 · 해외사례 ${caseCount}개`;
+        }
+
+        // 결과 렌더링
+        function renderResults() {
+            const container = document.getElementById('resultsContainer');
+            const infoElement = document.getElementById('resultsInfo');
+
+            infoElement.textContent = `검색결과 약 ${filteredResults.length}개`;
+
+            if (filteredResults.length === 0) {
+                container.innerHTML = `
+                    <div class="no-results">
+                        검색 조건에 맞는 결과가 없습니다.<br>
+                        다른 키워드나 필터를 시도해보세요.
+                    </div>
+                `;
+                return;
+            }
+
+            const html = filteredResults.map(item => renderResultItem(item)).join('');
+            container.innerHTML = html;
+
+            // 컴팩트 뷰 적용
+            container.classList.toggle('compact-view', !isDetailedView);
+        }
+
+        // 결과 아이템 렌더링
+        function renderResultItem(item) {
+            const stanceClass = item.stance;
+            const stanceName = {
+                'pro': '찬성',
+                'con': '반대',
+                'international': '해외사례'
+            }[item.stance];
+
+            const detailsHtml = (item.details || []).map(detail => `
+                <div class="detail-item">
+                    <div class="detail-title">${detail.subTitle}</div>
+                    <div class="detail-content">${detail.content}</div>
+                    <div class="detail-evidence">${detail.evidence}</div>
+                    <div class="source-info">
+                        <a href="${detail.source.url}" class="source-title" target="_blank">${detail.source.title}</a>
+                        <div class="source-meta">${detail.source.authors.join(', ')} - ${detail.source.institution} (${detail.source.type})</div>
+                    </div>
+                </div>
+            `).join('');
+
+            // 반박 논거 HTML (찬성 측에만 표시)
+            const counterArgumentsHtml = (item.stance === 'pro' && item.counterArguments) ? `
+                <div class="counter-arguments-section">
+                    <div class="counter-arguments-title">💬 반대 논거에 대한 반박</div>
+                    ${item.counterArguments.map(counter => `
+                        <div class="counter-argument">
+                            <div class="opposing-claim">
+                                <strong>반대측 주장:</strong> ${counter.opposingClaim}
+                            </div>
+                            <div class="rebuttal-content">
+                                <strong>찬성측 반박:</strong> ${counter.rebuttal}
+                            </div>
+                            <div class="rebuttal-evidence">
+                                <strong>반박 근거:</strong> ${counter.evidence}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : '';
+
+            const tagsHtml = (item.mainTags || []).map(tag => `
+                <span class="tag ${searchTerm && tag.toLowerCase().includes(searchTerm) ? 'highlight' : ''}">${tag}</span>
+            `).join('');
+
+            return `
+                <div class="result-item">
+                    <div class="result-header">
+                        <span class="result-stance stance-${stanceClass}">${stanceName}</span>
+                    </div>
+                    <a href="#" class="result-title">${item.title}</a>
+                    <div class="result-category">${item.category || item.country}</div>
+                    <div class="result-description">${item.description}</div>
+                    
+                    <div class="result-details">
+                        ${detailsHtml}
+                    </div>
+
+                    ${counterArgumentsHtml}
+
+                    <div class="tags">
+                        ${tagsHtml}
+                    </div>
+                </div>
+            `;
+        }
+
+        // 뷰 모드 설정
+        function setViewMode(detailed) {
+            isDetailedView = detailed;
+
+            document.getElementById('detailedView').classList.toggle('active', detailed);
+            document.getElementById('compactView').classList.toggle('active', !detailed);
+
+            renderResults();
+        }
+    </script>
+</body>
+
+</html>

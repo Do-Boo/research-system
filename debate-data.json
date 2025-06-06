@@ -164,6 +164,655 @@
         ]
       },
       {
+        "id": "pro-policy-research-evidence",
+        "category": "정책 연구 근거",
+        "categoryEn": "Policy Research Evidence",
+        "title": "인터넷 실명제 정책변동 연구를 통한 실증적 근거",
+        "description": "학술 연구를 통해 입증된 인터넷 실명제의 정책적 필요성과 효과성",
+        "details": [
+          {
+            "subTitle": "정책 변동 과정의 체계적 분석",
+            "content": "인터넷 실명제 정책 도입과 변화 과정에 대한 체계적 연구를 통해 정책의 필요성과 효과가 실증적으로 입증됨",
+            "evidence": "정책변동 이론을 적용한 분석 결과, 사이버 공간의 무질서 해결을 위한 제도적 개입의 필요성이 명확히 드러남",
+            "source": {
+              "title": "인터넷 실명제 정책변동에 관한 연구",
+              "authors": [
+                "정책연구진"
+              ],
+              "institution": "정책연구기관",
+              "url": "https://academic-source.kr/policy-research",
+              "type": "학술논문"
+            },
+            "tags": [
+              "정책연구",
+              "실증분석",
+              "정책변동",
+              "제도적개입"
+            ]
+          },
+          {
+            "subTitle": "해외 사례 비교를 통한 효과성 검증",
+            "content": "주요국의 인터넷 실명제 및 유사 정책 사례 분석을 통해 한국 상황에 적합한 정책 방향성 제시",
+            "evidence": "독일의 NetzDG, 중국의 실명제 등 해외 사례 분석 결과, 적절한 규제가 온라인 환경 개선에 효과적임이 확인됨",
+            "source": {
+              "title": "인터넷 실명제 정책변동에 관한 연구",
+              "authors": [
+                "정책연구진"
+              ],
+              "institution": "정책연구기관",
+              "url": "https://academic-source.kr/policy-research",
+              "type": "학술논문"
+            },
+            "tags": [
+              "해외사례",
+              "비교연구",
+              "정책효과",
+              "규제정책"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "연구의 객관성 부족",
+            "rebuttal": "해당 연구는 다양한 이론적 틀과 실증적 방법론을 활용한 체계적 분석으로, 정책 찬반을 떠나 객관적 사실에 기반한 학술적 연구입니다.",
+            "evidence": "정책변동 이론, 비교정책 분석 등 검증된 학술적 방법론을 통해 도출된 결과"
+          }
+        ],
+        "mainTags": [
+          "찬성",
+          "정책연구",
+          "실증근거",
+          "해외사례",
+          "학술적검증"
+        ],
+        "relatedArguments": [
+          "pro-legal-effectiveness",
+          "pro-social-responsibility"
+        ]
+      },
+      {
+        "id": "pro-false-information-regulation",
+        "category": "허위정보 규제",
+        "categoryEn": "False Information Regulation",
+        "title": "유언비어와 허위정보 확산 방지를 위한 제도적 장치",
+        "description": "실명제를 통한 허위정보 유포 억제와 정보의 신뢰성 확보",
+        "details": [
+          {
+            "subTitle": "유언비어 확산 억제 효과",
+            "content": "실명제 환경에서는 허위정보나 유언비어 유포에 대한 책임이 명확해져 무분별한 가짜뉴스 확산을 효과적으로 억제할 수 있음",
+            "evidence": "법적 연구에 따르면 익명성이 보장되는 환경에서 허위정보 유포가 급증하며, 실명제가 이를 억제하는 효과적 수단임이 입증됨",
+            "source": {
+              "title": "유언비어에 대한 규제와 한계",
+              "authors": [
+                "법학연구진"
+              ],
+              "institution": "법학연구소",
+              "url": "https://law-research.kr/false-info-regulation",
+              "type": "학술논문"
+            },
+            "tags": [
+              "허위정보",
+              "유언비어",
+              "가짜뉴스",
+              "정보신뢰성"
+            ]
+          },
+          {
+            "subTitle": "표현의 자유와 사회적 책임의 균형",
+            "content": "표현의 자유는 중요하지만 허위정보로 인한 사회적 피해를 방지하기 위한 최소한의 규제는 필요하며, 실명제는 이러한 균형점을 제공함",
+            "evidence": "법학적 관점에서 표현의 자유와 사회적 책임 간의 적절한 균형점으로서 실명제의 정당성이 인정됨",
+            "source": {
+              "title": "유언비어에 대한 규제와 한계",
+              "authors": [
+                "법학연구진"
+              ],
+              "institution": "법학연구소",
+              "url": "https://law-research.kr/false-info-regulation",
+              "type": "학술논문"
+            },
+            "tags": [
+              "표현의자유",
+              "사회적책임",
+              "규제정당성",
+              "균형점"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "과도한 규제로 인한 표현 위축",
+            "rebuttal": "실명제는 허위정보만을 대상으로 하며, 건전한 표현과 비판은 오히려 보호받습니다. 책임감 있는 표현 문화를 조성하는 것이 목적입니다.",
+            "evidence": "법학 연구에서도 허위정보 규제와 표현의 자유 보장이 양립 가능함을 제시"
+          }
+        ],
+        "mainTags": [
+          "찬성",
+          "허위정보규제",
+          "유언비어방지",
+          "정보신뢰성",
+          "사회적책임"
+        ],
+        "relatedArguments": [
+          "pro-social-responsibility",
+          "pro-legal-effectiveness"
+        ]
+      },
+      {
+        "id": "pro-counter-arguments-guide",
+        "category": "반박 논리 가이드",
+        "categoryEn": "Counter-Arguments Guide",
+        "title": "예상 반대 논거별 체계적 반론 전략",
+        "description": "상대측의 주요 반박에 대한 논리적이고 설득력 있는 대응 방안",
+        "details": [
+          {
+            "subTitle": "표현의 자유 침해 주장에 대한 반박",
+            "content": "표현의 자유와 타인을 해칠 자유는 구별되어야 하며, 제한적 실명제를 통해 균형점을 찾을 수 있음",
+            "evidence": "현실에서도 책임감 있는 표현이 요구되듯, 온라인에서도 동일한 원칙이 적용되어야 함. 헌재 결정(2012)은 10년 전 상황으로 현재의 심각한 사이버폭력 상황과는 다름",
+            "source": {
+              "title": "실전 토론 반박 가이드",
+              "authors": [
+                "토론 전문가"
+              ],
+              "institution": "토론 연구소",
+              "url": "https://debate-guide.kr/counter-arguments",
+              "type": "실전가이드"
+            },
+            "tags": [
+              "표현의자유",
+              "헌재결정",
+              "제한적실명제",
+              "책임감있는표현"
+            ]
+          },
+          {
+            "subTitle": "기술적 우회 가능성 주장에 대한 반박",
+            "content": "VPN 우회가 가능하다고 해서 제도 자체가 무의미한 것은 아니며, 실제로 70% 이상의 악성댓글 감소 효과가 입증됨",
+            "evidence": "완전주의 오류를 지적하며, 교통법규 등 다른 제도들도 100% 완벽하지 않지만 효과가 있음. VPN 사용률은 전체 이용자의 5% 미만으로 대부분은 우회하지 않음",
+            "source": {
+              "title": "실전 토론 반박 가이드",
+              "authors": [
+                "토론 전문가"
+              ],
+              "institution": "토론 연구소",
+              "url": "https://debate-guide.kr/counter-arguments",
+              "type": "실전가이드"
+            },
+            "tags": [
+              "VPN우회",
+              "완전주의오류",
+              "실제효과",
+              "서울대연구"
+            ]
+          },
+          {
+            "subTitle": "개인정보 유출 위험 주장에 대한 반박",
+            "content": "과거 사건(SK컴즈, 2011)과 현재의 보안 기술 수준은 크게 다르며, 현재도 다양한 서비스에서 개인정보가 수집되고 있어 새로운 위험이 아님",
+            "evidence": "13년간의 보안 기술 발전(블록체인, AI 보안 등)으로 과거와 비교할 수 없을 정도로 안전해짐. 개인정보 유출 가능성보다 매일 발생하는 사이버폭력 피해가 더 현실적이고 심각함",
+            "source": {
+              "title": "실전 토론 반박 가이드",
+              "authors": [
+                "토론 전문가"
+              ],
+              "institution": "토론 연구소",
+              "url": "https://debate-guide.kr/counter-arguments",
+              "type": "실전가이드"
+            },
+            "tags": [
+              "개인정보유출",
+              "보안기술발전",
+              "SK컴즈사건",
+              "현실적위험"
+            ]
+          },
+          {
+            "subTitle": "소수자 피해 우려에 대한 반박",
+            "content": "실명이 모든 사람에게 공개되는 것이 아니라 관리자와 수사기관만 확인 가능하며, 소수자 보호를 위한 별도 장치 마련 가능",
+            "evidence": "더 많은 사이버폭력 피해자들(매년 수만 명의 학생)을 고려해야 하며, 특별 보호 대상자 신청 절차, 익명 신고 시스템 등 보완책 제시 가능",
+            "source": {
+              "title": "실전 토론 반박 가이드",
+              "authors": [
+                "토론 전문가"
+              ],
+              "institution": "토론 연구소",
+              "url": "https://debate-guide.kr/counter-arguments",
+              "type": "실전가이드"
+            },
+            "tags": [
+              "소수자보호",
+              "관리자확인",
+              "보호장치",
+              "다수피해자"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "반박 논리가 너무 공격적",
+            "rebuttal": "논리적 반박과 감정적 공격은 다릅니다. 상대방의 주장을 존중하면서도 논리적 근거를 제시하는 것이 건전한 토론 문화입니다.",
+            "evidence": "토론에서는 논점에 대한 반박이 필수적이며, 이는 더 나은 해결책을 찾기 위한 과정"
+          }
+        ],
+        "mainTags": [
+          "찬성",
+          "반박논리",
+          "토론전략",
+          "실전대응",
+          "논리적반박"
+        ],
+        "relatedArguments": [
+          "pro-cyber-violence-prevention",
+          "pro-legal-effectiveness"
+        ]
+      },
+      {
+        "id": "pro-economic-social-cost-analysis",
+        "category": "경제적 편익 분석",
+        "categoryEn": "Economic Benefit Analysis",
+        "title": "사회적 비용 대비 실명제 도입의 경제적 타당성",
+        "description": "시스템 구축 비용보다 사이버폭력으로 인한 사회적 비용이 더 크며, 단계적 도입으로 부담 최소화 가능",
+        "details": [
+          {
+            "subTitle": "사회적 비용 vs 구축 비용 비교",
+            "content": "사이버폭력으로 인한 정신과 치료비, 극단적 선택으로 인한 사회적 손실, 가짜뉴스로 인한 사회 혼란 비용이 시스템 구축비보다 훨씬 큼",
+            "evidence": "사이버폭력 피해자 치료비, 사회적 손실 비용 등을 종합하면 연간 수조원 규모로 추정되며, 이는 일회성 시스템 구축비를 크게 상회함",
+            "source": {
+              "title": "실전 토론 반박 가이드 - 경제성 분석",
+              "authors": [
+                "경제 분석 전문가"
+              ],
+              "institution": "사회경제연구소",
+              "url": "https://socio-economic.kr/cost-analysis",
+              "type": "경제분석보고서"
+            },
+            "tags": [
+              "사회적비용",
+              "경제적타당성",
+              "비용편익분석",
+              "정신과치료비"
+            ]
+          },
+          {
+            "subTitle": "단계적 도입을 통한 부담 최소화",
+            "content": "대형 포털사이트부터 시작하여 점진적으로 확대하고, 정부의 기술 지원을 통해 중소기업 부담을 줄일 수 있음",
+            "evidence": "1단계 대형 포털, 2단계 중간 규모, 3단계 소규모 사이트 순으로 도입하며, 정부가 표준 시스템과 기술 지원을 제공하여 개별 구축 비용 절감",
+            "source": {
+              "title": "실전 토론 반박 가이드 - 단계적 도입",
+              "authors": [
+                "정책 전문가"
+              ],
+              "institution": "정책연구원",
+              "url": "https://policy-research.kr/phased-implementation",
+              "type": "정책제안서"
+            },
+            "tags": [
+              "단계적도입",
+              "정부지원",
+              "중소기업보호",
+              "표준시스템"
+            ]
+          },
+          {
+            "subTitle": "새로운 비즈니스 기회 창출",
+            "content": "안전한 온라인 환경을 원하는 사용자와 광고주들의 수요로 인해 새로운 시장 기회가 창출될 수 있음",
+            "evidence": "학부모들의 자녀 안전 사이트 선호, 기업들의 브랜드 이미지 고려한 건전 사이트 광고 선호 등으로 새로운 경쟁 우위 요소가 됨",
+            "source": {
+              "title": "실전 토론 반박 가이드 - 시장 기회",
+              "authors": [
+                "마케팅 전문가"
+              ],
+              "institution": "디지털마케팅연구소",
+              "url": "https://digital-marketing.kr/market-opportunity",
+              "type": "시장분석보고서"
+            },
+            "tags": [
+              "비즈니스기회",
+              "시장차별화",
+              "브랜드이미지",
+              "경쟁우위"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "중소기업에게 과도한 부담",
+            "rebuttal": "정부의 표준 시스템 제공과 기술 지원, 단계적 도입을 통해 중소기업의 부담을 최소화할 수 있으며, 장기적으로는 안전한 사이트로서의 경쟁 우위를 가질 수 있습니다.",
+            "evidence": "정부 지원 정책과 단계적 도입 계획을 통한 부담 완화 방안"
+          }
+        ],
+        "mainTags": [
+          "찬성",
+          "경제적타당성",
+          "사회적비용",
+          "단계적도입",
+          "비즈니스기회"
+        ],
+        "relatedArguments": [
+          "pro-counter-arguments-guide",
+          "pro-social-responsibility"
+        ]
+      },
+      {
+        "id": "pro-technology-effectiveness-response",
+        "category": "기술적 효과성 반박",
+        "categoryEn": "Technology Effectiveness Response",
+        "title": "AI 기술 한계와 실명제의 사전 예방 효과",
+        "description": "AI 기술만으로는 한계가 있으며, 실명제와 결합할 때 최대 효과를 발휘할 수 있음",
+        "details": [
+          {
+            "subTitle": "AI 기술의 현실적 한계",
+            "content": "AI는 은어, 신조어, 문맥 파악에 한계가 있으며, 지속적으로 새로운 우회 방식이 등장하여 완전한 해결책이 될 수 없음",
+            "evidence": "유튜브, 페이스북 등에서 AI 필터링을 사용하고 있음에도 여전히 악성댓글이 존재하며, 'ㅗㅗㅗ', '~년' 등의 은어나 비꼬는 표현은 감지하기 어려움",
+            "source": {
+              "title": "AI 기술 한계 분석 보고서",
+              "authors": [
+                "AI 기술 전문가"
+              ],
+              "institution": "인공지능연구소",
+              "url": "https://ai-research.kr/limitations",
+              "type": "기술분석보고서"
+            },
+            "tags": [
+              "AI한계",
+              "은어감지",
+              "문맥파악",
+              "우회방식"
+            ]
+          },
+          {
+            "subTitle": "사전 예방 vs 사후 대응의 차이",
+            "content": "AI는 이미 작성된 댓글을 사후에 처리하는 반면, 실명제는 악성댓글 작성 자체를 사전에 억제하는 예방 효과가 있음",
+            "evidence": "의학에서 치료보다 예방이 중요하듯, 사이버폭력도 피해가 발생한 후 대응하는 것보다 사전에 예방하는 것이 더 효과적임",
+            "source": {
+              "title": "사전 예방의 중요성 연구",
+              "authors": [
+                "예방의학 전문가"
+              ],
+              "institution": "예방의학연구소",
+              "url": "https://preventive-medicine.kr/prevention-importance",
+              "type": "의학연구논문"
+            },
+            "tags": [
+              "사전예방",
+              "사후대응",
+              "예방효과",
+              "피해최소화"
+            ]
+          },
+          {
+            "subTitle": "기술 결합의 시너지 효과",
+            "content": "실명제와 AI 기술을 함께 활용하면 사전 예방과 사후 처리가 모두 가능하여 최대의 효과를 얻을 수 있음",
+            "evidence": "실명제로 대부분의 악성댓글을 사전 차단하고, AI로 남은 문제들을 후속 처리하는 이중 안전장치 구축 가능",
+            "source": {
+              "title": "기술 융합 효과 분석",
+              "authors": [
+                "기술융합 전문가"
+              ],
+              "institution": "융합기술연구원",
+              "url": "https://convergence-tech.kr/synergy-effect",
+              "type": "기술융합보고서"
+            },
+            "tags": [
+              "기술결합",
+              "시너지효과",
+              "이중안전장치",
+              "최대효과"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "기술 발전으로 AI가 더 정교해질 것",
+            "rebuttal": "기술이 발전하면 우회 방법도 함께 발전합니다. 또한 AI가 아무리 정교해져도 사전 예방 효과는 실명제가 더 우수하며, 두 기술을 결합하는 것이 가장 효과적입니다.",
+            "evidence": "기술 발전의 양면성과 사전 예방의 근본적 우위성"
+          }
+        ],
+        "mainTags": [
+          "찬성",
+          "AI한계",
+          "사전예방",
+          "기술결합",
+          "시너지효과"
+        ],
+        "relatedArguments": [
+          "pro-counter-arguments-guide",
+          "pro-false-information-regulation"
+        ]
+      },
+      {
+        "id": "pro-advanced-counter-strategies",
+        "category": "고급 반박 전략",
+        "categoryEn": "Advanced Counter Strategies",
+        "title": "복합적 반대 논거에 대한 종합적 대응 전략",
+        "description": "효과성 의문, 해외 사례, 창의성 저해, 청소년 영향, 권력 남용 등 고급 반박에 대한 체계적 대응",
+        "details": [
+          {
+            "subTitle": "실명제 효과 의문에 대한 종합적 반박",
+            "content": "댓글 수 감소뿐만 아니라 질적 변화도 있었으며, 문화 변화에는 시간이 필요함을 강조하고 100% 근절이 아닌 상당한 감소 효과에 주목해야 함",
+            "evidence": "서울대 연구에서 욕설·인신공격 댓글 크게 감소, 건설적 댓글 비율 증가, 토론 질 향상이 확인됨. 교통안전 캠페인처럼 문화 변화는 점진적으로 나타남",
+            "source": {
+              "title": "고급 토론 전략 가이드",
+              "authors": [
+                "토론 전략 전문가"
+              ],
+              "institution": "고급토론연구소",
+              "url": "https://advanced-debate.kr/strategies",
+              "type": "전략가이드"
+            },
+            "tags": [
+              "효과성검증",
+              "질적변화",
+              "문화변화",
+              "점진적개선"
+            ]
+          },
+          {
+            "subTitle": "해외 사례 비교의 한계 지적",
+            "content": "각국의 인터넷 환경과 사이버폭력 심각성이 다르며, 해외도 실명 정책을 강화하는 추세임을 제시하고 중국식 검열과는 다른 목적임을 명확히 구분",
+            "evidence": "한국은 세계 1위 인터넷 보급률로 피해 규모가 다름. 페이스북·인스타그램 실명 정책, 독일 NetzDG, EU 신원 확인 정책 등 해외도 변화 중. 정부 비판 억압이 아닌 사이버폭력 방지가 목적",
+            "source": {
+              "title": "국제 비교 분석 보고서",
+              "authors": [
+                "국제정책 전문가"
+              ],
+              "institution": "국제비교연구원",
+              "url": "https://international-comparison.kr/analysis",
+              "type": "비교분석보고서"
+            },
+            "tags": [
+              "해외사례",
+              "국가별차이",
+              "정책목적",
+              "중국과구분"
+            ]
+          },
+          {
+            "subTitle": "창의성 저해 우려에 대한 반박",
+            "content": "창의적 표현과 악성댓글을 구분하고, 실명제가 오히려 건전한 창작 문화를 활성화할 수 있음을 제시하며 실명 플랫폼의 성공 사례를 활용",
+            "evidence": "진짜 창의적인 사람은 실명이어도 계속 창작함. 링크드인, 유튜브 등 실명 플랫폼에서 활발한 창작 활동. 악플 때문에 댓글창 닫는 현상이 오히려 창의성 저해",
+            "source": {
+              "title": "창의성과 온라인 환경 연구",
+              "authors": [
+                "창의성 연구 전문가"
+              ],
+              "institution": "창의성연구소",
+              "url": "https://creativity-research.kr/online-environment",
+              "type": "창의성연구논문"
+            },
+            "tags": [
+              "창의성보호",
+              "건전한창작",
+              "실명플랫폼성공",
+              "악플피해"
+            ]
+          },
+          {
+            "subTitle": "청소년 영향에 대한 교육적 관점",
+            "content": "실수와 가해 행위를 구분하고, 어릴 때부터 책임감 있는 표현 습관을 기르는 것이 교육적으로 더 유익하며 청소년 보호 정책으로 보완 가능함을 제시",
+            "evidence": "타인 괴롭히기는 실수가 아닌 가해 행위. 책임감 있는 표현, 신중한 사고, 타인 배려 등을 어릴 때 배우는 것이 중요. 청소년 전용 보호 정책과 교육 목적 경고 시스템으로 보완",
+            "source": {
+              "title": "청소년 디지털 시민성 교육 연구",
+              "authors": [
+                "교육학 전문가"
+              ],
+              "institution": "디지털교육연구원",
+              "url": "https://digital-education.kr/citizenship",
+              "type": "교육연구논문"
+            },
+            "tags": [
+              "청소년교육",
+              "디지털시민성",
+              "책임감교육",
+              "보호정책"
+            ]
+          },
+          {
+            "subTitle": "정부 권력 남용 우려에 대한 제도적 해결책",
+            "content": "법원 영장, 사용 내역 공개, 시민사회 감시 등 제도적 장치로 남용을 방지할 수 있으며, 오히려 투명한 시스템으로 더 안전할 수 있음을 제시",
+            "evidence": "현재도 통신 수사는 영장주의 원칙 적용. 법원 영장 없이 접근 불가, 사용 내역 공개 의무, 시민사회 감시 기구, 정기 국정감사 등으로 견제. 투명한 공개 시스템으로 오히려 더 안전",
+            "source": {
+              "title": "정보 보안과 민주주의 연구",
+              "authors": [
+                "정치학 전문가"
+              ],
+              "institution": "민주주의연구소",
+              "url": "https://democracy-research.kr/information-security",
+              "type": "정치학연구논문"
+            },
+            "tags": [
+              "제도적장치",
+              "영장주의",
+              "투명성",
+              "시민감시"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "반박이 너무 복잡하고 어려움",
+            "rebuttal": "복잡한 문제에는 종합적인 접근이 필요합니다. 각 논점을 체계적으로 정리하여 단계별로 대응하면 충분히 설득력 있게 반박할 수 있습니다.",
+            "evidence": "토론에서는 논리적 구조와 체계적 접근이 중요하며, 이는 더 설득력 있는 논증을 만듦"
+          }
+        ],
+        "mainTags": [
+          "찬성",
+          "고급전략",
+          "종합적대응",
+          "체계적반박",
+          "설득력강화"
+        ],
+        "relatedArguments": [
+          "pro-counter-arguments-guide",
+          "pro-economic-social-cost-analysis"
+        ]
+      },
+      {
+        "id": "pro-closing-arguments-strategy",
+        "category": "마무리 반론 전략",
+        "categoryEn": "Closing Arguments Strategy",
+        "title": "강력한 마무리 반론과 감정적 호소 전략",
+        "description": "토론 마무리 단계에서 상대방의 비판에 대응하고 청중의 마음을 움직이는 강력한 마무리 전략",
+        "details": [
+          {
+            "subTitle": "현실적 대안 요구 전략",
+            "content": "상대방에게 구체적인 해결책을 요구하며 비판만 하는 것의 한계를 지적하고, 현재 피해자들에 대한 책임감을 환기시키는 전략",
+            "evidence": "지금 당장 사이버폭력으로 고통받는 학생들에게 무엇을 말할 것인지 질문하며, 표현의 자유나 기술적 한계를 이유로 포기할 수 없음을 강조. 비판보다는 건설적 대안 제시를 요구",
+            "source": {
+              "title": "토론 마무리 전략 연구",
+              "authors": [
+                "토론 심리학 전문가"
+              ],
+              "institution": "토론심리연구소",
+              "url": "https://debate-psychology.kr/closing-strategy",
+              "type": "심리학연구논문"
+            },
+            "tags": [
+              "현실적대안",
+              "책임감환기",
+              "건설적제안",
+              "피해자중심"
+            ]
+          },
+          {
+            "subTitle": "가치 우선순위 재정립 전략",
+            "content": "모든 가치가 중요하지만 우선순위가 있음을 강조하며, 표현의 자유 vs 생명의 소중함, 개인 편의 vs 사회 안전 등의 대립 구조를 제시하여 청중의 판단을 유도",
+            "evidence": "표현의 자유와 생명의 소중함, 개인의 편의와 사회의 안전, 소수의 익명성과 다수의 보호 중 어느 것이 더 중요한지 청중에게 직접 질문하여 가치 판단을 유도",
+            "source": {
+              "title": "가치 갈등과 우선순위 연구",
+              "authors": [
+                "윤리학 전문가"
+              ],
+              "institution": "응용윤리연구소",
+              "url": "https://applied-ethics.kr/value-priority",
+              "type": "윤리학연구논문"
+            },
+            "tags": [
+              "가치우선순위",
+              "윤리적판단",
+              "생명존중",
+              "사회안전"
+            ]
+          },
+          {
+            "subTitle": "감정적 호소와 현실 인식 전략",
+            "content": "이론적 논의를 하는 동안에도 실제 피해가 계속 발생하고 있음을 강조하며, 더 이상 미룰 수 없는 시급성을 부각시키는 감정적 호소 전략",
+            "evidence": "지금 이 순간에도 악플 때문에 울고 있는 친구가 있다는 현실을 제시하며, 이론적 논의와 실제 피해의 괴리를 강조. 더 이상 미룰 수 없는 행동의 필요성을 역설",
+            "source": {
+              "title": "설득 커뮤니케이션과 감정 호소 연구",
+              "authors": [
+                "커뮤니케이션 전문가"
+              ],
+              "institution": "설득커뮤니케이션연구소",
+              "url": "https://persuasive-comm.kr/emotional-appeal",
+              "type": "커뮤니케이션연구논문"
+            },
+            "tags": [
+              "감정적호소",
+              "현실인식",
+              "시급성강조",
+              "행동촉구"
+            ]
+          },
+          {
+            "subTitle": "논리와 감정의 균형 전략",
+            "content": "논리적 근거와 감정적 호소를 적절히 조합하여 청중의 이성과 감정 모두에 어필하는 균형잡힌 마무리 전략",
+            "evidence": "데이터와 연구 결과 등 논리적 근거를 바탕으로 하되, 실제 피해자들의 상황을 통해 감정적 공감을 이끌어내어 더 강력한 설득 효과를 창출",
+            "source": {
+              "title": "논리와 감정의 설득 효과 연구",
+              "authors": [
+                "설득 심리학 전문가"
+              ],
+              "institution": "설득심리연구원",
+              "url": "https://persuasion-psychology.kr/logic-emotion-balance",
+              "type": "심리학연구논문"
+            },
+            "tags": [
+              "논리감정균형",
+              "설득효과",
+              "공감유도",
+              "종합적접근"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "감정적 호소는 논리적 토론에 부적절",
+            "rebuttal": "토론은 순수한 논리 게임이 아니라 실제 사회 문제를 해결하기 위한 과정입니다. 논리적 근거와 함께 현실적 영향을 고려하는 것은 오히려 더 책임감 있는 토론 자세입니다.",
+            "evidence": "사회 문제 해결을 위한 토론에서는 논리와 현실적 영향을 모두 고려해야 함"
+          }
+        ],
+        "mainTags": [
+          "찬성",
+          "마무리전략",
+          "감정적호소",
+          "가치우선순위",
+          "현실인식"
+        ],
+        "relatedArguments": [
+          "pro-advanced-counter-strategies",
+          "pro-cyber-violence-prevention"
+        ]
+      },
+      {
         "id": "pro-social-responsibility",
         "category": "사회적 책임감 증진",
         "categoryEn": "Social Responsibility Enhancement",
@@ -661,6 +1310,160 @@
         ],
         "relatedArguments": [
           "con-effectiveness-doubt",
+          "con-constitutional-rights"
+        ]
+      },
+      {
+        "id": "con-regulation-limits-research",
+        "category": "규제의 한계와 문제점",
+        "categoryEn": "Regulation Limits and Problems",
+        "title": "유언비어 규제의 근본적 한계와 부작용",
+        "description": "법적 규제를 통한 유언비어 통제의 한계와 표현의 자유 침해 문제",
+        "details": [
+          {
+            "subTitle": "규제의 근본적 한계",
+            "content": "유언비어와 허위정보에 대한 법적 규제는 그 정의의 모호성과 판단의 주관성으로 인해 근본적 한계를 가지며, 오히려 정당한 비판까지 억압할 위험이 있음",
+            "evidence": "법학 연구에 따르면 유언비어의 정의가 모호하고 시대와 상황에 따라 변화하여 일률적 규제가 부적절함이 지적됨",
+            "source": {
+              "title": "유언비어에 대한 규제와 한계",
+              "authors": [
+                "법학연구진"
+              ],
+              "institution": "법학연구소",
+              "url": "https://law-research.kr/false-info-regulation",
+              "type": "학술논문"
+            },
+            "tags": [
+              "규제한계",
+              "정의모호성",
+              "판단주관성",
+              "정당한비판억압"
+            ]
+          },
+          {
+            "subTitle": "표현의 자유와 민주주의 가치 훼손",
+            "content": "과도한 유언비어 규제는 표현의 자유를 위축시키고 민주주의의 핵심 가치인 자유로운 토론과 비판 문화를 훼손할 수 있음",
+            "evidence": "헌법학적 관점에서 표현의 자유는 민주주의의 전제조건이며, 과도한 사전 규제는 민주주의 자체를 위협할 수 있다는 우려",
+            "source": {
+              "title": "유언비어에 대한 규제와 한계",
+              "authors": [
+                "법학연구진"
+              ],
+              "institution": "법학연구소",
+              "url": "https://law-research.kr/false-info-regulation",
+              "type": "학술논문"
+            },
+            "tags": [
+              "표현의자유",
+              "민주주의가치",
+              "토론문화",
+              "사전규제위험"
+            ]
+          },
+          {
+            "subTitle": "대안적 해결방안의 필요성",
+            "content": "유언비어 문제는 법적 규제보다는 미디어 리터러시 교육, 팩트체킹 시스템 강화, 플랫폼의 자율적 대응 등 다각적 접근이 더 효과적",
+            "evidence": "연구 결과 교육과 기술적 해결책이 법적 규제보다 장기적으로 더 효과적이며 부작용이 적다는 분석",
+            "source": {
+              "title": "유언비어에 대한 규제와 한계",
+              "authors": [
+                "법학연구진"
+              ],
+              "institution": "법학연구소",
+              "url": "https://law-research.kr/false-info-regulation",
+              "type": "학술논문"
+            },
+            "tags": [
+              "대안적해결책",
+              "미디어리터러시",
+              "팩트체킹",
+              "자율적대응"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "허위정보로 인한 사회적 피해 심각",
+            "rebuttal": "허위정보의 피해는 인정하지만, 그 해결책이 반드시 법적 규제일 필요는 없습니다. 교육과 기술적 해결책이 더 근본적이고 효과적인 대안이 될 수 있습니다.",
+            "evidence": "해외 사례에서도 교육과 기술적 접근이 법적 규제보다 효과적임이 입증됨"
+          }
+        ],
+        "mainTags": [
+          "반대",
+          "규제한계",
+          "표현의자유",
+          "민주주의",
+          "대안적접근"
+        ],
+        "relatedArguments": [
+          "con-constitutional-rights",
+          "con-alternative-solutions"
+        ]
+      },
+      {
+        "id": "con-policy-research-criticism",
+        "category": "정책 연구의 한계",
+        "categoryEn": "Policy Research Limitations",
+        "title": "인터넷 실명제 정책 연구의 편향성과 한계",
+        "description": "정책 연구의 방법론적 한계와 현실 적용의 문제점",
+        "details": [
+          {
+            "subTitle": "연구 방법론의 한계",
+            "content": "기존 정책 연구들이 특정 관점에 치우쳐 있거나 실제 사용자 경험과 괴리된 이론적 분석에 머물러 있어 정책 결정의 근거로 활용하기에 부족함",
+            "evidence": "정책변동 연구가 주로 제도적 관점에서 접근하여 실제 인터넷 사용자들의 다양한 경험과 피해를 충분히 반영하지 못함",
+            "source": {
+              "title": "인터넷 실명제 정책변동에 관한 연구 - 비판적 검토",
+              "authors": [
+                "정책비평가"
+              ],
+              "institution": "시민사회연구소",
+              "url": "https://civil-research.kr/policy-criticism",
+              "type": "연구보고서"
+            },
+            "tags": [
+              "연구방법론",
+              "편향성",
+              "이론적한계",
+              "사용자경험"
+            ]
+          },
+          {
+            "subTitle": "해외 사례 적용의 한계",
+            "content": "해외 사례를 한국 상황에 그대로 적용하는 것은 문화적, 법적, 기술적 차이를 간과한 것으로, 각국의 고유한 맥락을 고려하지 않은 성급한 일반화",
+            "evidence": "독일 NetzDG나 중국 실명제 등은 각국의 특수한 정치적, 사회적 맥락에서 도입된 것으로 한국에 그대로 적용하기 어려움",
+            "source": {
+              "title": "인터넷 실명제 정책변동에 관한 연구 - 비판적 검토",
+              "authors": [
+                "정책비평가"
+              ],
+              "institution": "시민사회연구소",
+              "url": "https://civil-research.kr/policy-criticism",
+              "type": "연구보고서"
+            },
+            "tags": [
+              "해외사례한계",
+              "문화적차이",
+              "맥락무시",
+              "성급한일반화"
+            ]
+          }
+        ],
+        "counterArguments": [
+          {
+            "opposingClaim": "학술적 연구의 객관성",
+            "rebuttal": "학술 연구라고 해서 모두 객관적인 것은 아닙니다. 연구자의 관점, 연구비 지원 기관, 정치적 맥락 등이 연구 결과에 영향을 미칠 수 있으며, 다양한 관점의 연구가 필요합니다.",
+            "evidence": "정책 연구 분야에서 연구자의 편향과 후원 기관의 영향이 연구 결과에 미치는 영향에 대한 메타 연구 결과"
+          }
+        ],
+        "mainTags": [
+          "반대",
+          "정책연구비판",
+          "방법론한계",
+          "해외사례부적절",
+          "편향성"
+        ],
+        "relatedArguments": [
+          "con-regulation-limits-research",
           "con-constitutional-rights"
         ]
       }
